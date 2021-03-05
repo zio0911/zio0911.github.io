@@ -11,15 +11,15 @@ Node,Graphql,
 Spring Hibernate,Spring Boot
 
 ### Experiences
-Daekyo
+D*****
 - 2021.02 ~ current
 - Node / Graphql / Back-End Developer
 
-Frameout
+F*******
 - 2018.06 ~ 2021.01
 - Spring Boot,Spring Framework / Back-End Developer
 
-ZINA
+Z*** *****
 - 2017.04 ~ 2018.05
 - Spring Boot / ElasticSearch,Redis / Back-End Developer
 
@@ -27,11 +27,11 @@ Freelancer
 - 2016.06 ~ 2017.03 
 - Spring Framework / Full Stack Developer
 
-Interegen
+I********
 - 2013.01 ~ 2016.06
 - Spring Framework / Full Stack Developer
 
-ANJ 
+A** ********
 - 2010.11 ~ 2012.12
 - Spring Framework / MFC++ / FLEX / Full Stack Developer
 
