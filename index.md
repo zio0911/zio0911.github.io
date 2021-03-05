@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+## Zio
+- Java developer
+- Full Stack Developer
 
-You can use the [editor on GitHub](https://github.com/zio0911/zio0911.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+## Skill
+Oracle,Mysql,MsSql,MariaDb
+ElasticSearch,Redis,
+Vue,JSTL,FreeMarker,
+Python,
+Node,Graphql,
+Spring Hibernate,Spring Boot
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Experiences
+Daekyo
+- 2021.02 ~ current
+- Node / Graphql / Back-End Developer
 
-### Markdown
+Frameout
+- 2018.06 ~ 2021.01
+- Spring Boot,Spring Framework / Back-End Developer
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+ZINA
+- 2017.04 ~ 2018.05
+- Spring Boot / ElasticSearch,Redis / Back-End Developer
 
-```markdown
-Syntax highlighted code block
+Freelancer
+- 2016.06 ~ 2017.03 
+- Spring Framework / Full Stack Developer
 
-# Header 1
-## Header 2
-### Header 3
+Interegen
+- 2013.01 ~ 2016.06
+- Spring Framework / Full Stack Developer
 
-- Bulleted
-- List
+ANJ 
+- 2010.11 ~ 2012.12
+- Spring Framework / MFC++ / FLEX / Full Stack Developer
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zio0911/zio0911.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
