@@ -75,7 +75,7 @@ netease_comment: false
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Java developer <br> Full Stack Developer"
-sidebar-avatar: /img/avatar-zio-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-zio-ny.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
