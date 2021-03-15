@@ -7,7 +7,7 @@ DB : Oracle, Mysql, MsSql, MariaDb
 
 MemoryDB : ElasticSearch,Redis,
 
-Yemplate Engine : JSTL,FreeMarker,thymeleaf
+Template Engine : JSTL,FreeMarker,thymeleaf
 
 FrameWork : Spring Hibernate, Spring Boot, JDF
 
