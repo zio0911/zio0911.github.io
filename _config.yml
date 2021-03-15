@@ -27,3 +27,5 @@ plugins:
   
 layout: default
 comments: true
+
+disqus_shortname: 'zio blog'
