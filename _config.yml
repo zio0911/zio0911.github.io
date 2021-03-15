@@ -23,9 +23,3 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
-  
-  
-layout: default
-comments: true
-
-disqus_shortname: 'https-zio0911-github-io-1'
