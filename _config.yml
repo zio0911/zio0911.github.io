@@ -1,19 +1,19 @@
-title:              Clean Blog
+title:              Zio Blog
 email:              zio0911@naver.com
-description:        A Blog Theme by Start Bootstrap
-author:             Start Bootstrap
+description:        끄적이는 공간
+author:             zio
 baseurl:            ""
-url:                "https://startbootstrap.github.io"
+url:                "https://zio0911.github.io"
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
-instagram_username:  
-linkedin_username:
+twitter_username:   zioscript
+github_username:    zio0911
+facebook_username:  zioscript
+instagram_username:  zio333
+#linkedin_username:
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+#google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
