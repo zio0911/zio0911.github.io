@@ -1,0 +1,72 @@
+---
+layout: post
+title: "ElasticSearch Mapping Change"
+subtitle: "엘라스틱 서치 중단 없이 맵핑 정보를 변경하는 방법"
+date: 2020-02-15 10:00:00 -0400
+background: '/img/posts/01.jpg'
+---
+
+<p>안녕하세요 지오입니다.</p>
+<p>금일은 엘라스틱 서치 중단 없이 맵핑 정보를 변경하는 방법에 대해서 서술하려고 합니다.</p>
+<p><br></p>
+
+<p>엘라스틱 서치 맵핑을 변경 하는 명령어를 입력시</p>
+<p><strong>"resource_already_exists_exception"</strong></p>
+<p>오류가 발생하게 되는데요.</p>
+<p><br></p>
+
+<p>이미 기존의 데이터가 있는 상태에서 맵핑 정보를 변경 할 수 없기 때문입니다.</p>
+<p>데이터를 변경하기 위해서는 변경하려는 맵핑정보로 신규 인덱스를 생성후 이름을 변경해주면 됩니다.</p>
+<p><br></p>
+
+<h4>1. 기존 인덱스 (keyword 타입)</h4>
+<pre><code>curl -XPUT 'host:9200/ip_master?pretty' -H 'Content-Type: application/json' -d'
+{
+  "mappings": {
+    "view": {
+      "_all": { "enabled": false },
+      "properties": {
+        "ip_addr": { "type": "keyword" },
+        "seq_no":  { "type": "long" }
+      }
+    }
+  }
+}'</code></pre>
+<p><br></p>
+
+<p>키워드로 생성된 정보가 있다고 한다면</p>
+<p>해당 ip_addr에 대한 타입을 <strong>ip</strong>로 변경하려고 한다면</p>
+<p><br></p>
+
+<h4>2. 변경된 타입으로 신규 인덱스 생성</h4>
+<pre><code>curl -XPUT 'host:9200/ip_master2?pretty' -H 'Content-Type: application/json' -d'
+{
+  "mappings": {
+    "view": {
+      "_all": { "enabled": false },
+      "properties": {
+        "ip_addr": { "type": "ip" },
+        "seq_no":  { "type": "long" }
+      }
+    }
+  }
+}'</code></pre>
+<p><br></p>
+
+<p>위와 같이 변경된 타입에 대한 인덱스를 생성후에</p>
+<p><br></p>
+
+<h4>3. Reindex로 데이터 이전</h4>
+<pre><code>curl -X POST "host:9200/_reindex" -H 'Content-Type: application/json' -d'
+{
+  "source": {
+    "index": "ip_master"
+  },
+  "dest": {
+    "index": "ip_master2"
+  }
+}'</code></pre>
+<p><br></p>
+
+<p>reindex로 변경을 하면 데이터가 변경되어 입력됩니다.</p>
+<p>변경된 후에 기존의 인덱스를 삭제 후에 다시 변경해주면 중단없이 타입을 변경 할 수 있습니다.</p>
